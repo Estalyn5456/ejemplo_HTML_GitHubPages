@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portafolio Web Personal - Estalyn Ortega</title>
+</head>
+<body>
+
+  <header>
+    <h1>Yordan Estalyn Ortega Veliz</h1>
+    <p>No existen límites, los limites los pones tu mismo</p>
+    <img src="imagenes/ft animada 2.jpg" alt="Mi foto personal"width="200>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#sobremí"><br>OPCIONES RAPIDAS</a></li>
+      <li><a href="#intereses">Mis intereses</a></li>
+      <li><a href="#habilidades">Mis habilidades</a></li>
+      <li><a href="#multimedia">Area de video o audio informativo</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  <br>
+  <section id="sobre mÍ">
+    <h2>Un poco sobre mi mismo</h2>
+    <p>
+      Hola, mi nombre es <strong>Yordan Estalyn Ortega Veliz</strong>. Soy estudiante de la carrera de <em>Ingeniería en Sistemas</em> en la Universidad Técnica de Babahoyo. Desde muy joven he sentido una gran curiosidad por la tecnología, especialmente por el mundo de la programación, lo cual me llevó a elegir esta carrera, me considero una persona perseverante y con muchas ganas de superarme. Disfruto aprender cosas nuevas, sobre todo en las nuevas herramientas tecnológicas. Actualmente, me enfocado en fortalecer mis conocimientos en lenguajes de programación como Java, Python y HTML, así como también en el desarrollo de proyectos prácticos que me permitan aplicar lo aprendido en la universidad. Uno de mis objetivos principales es convertirme en un profesional competente, capaz de desarrollar soluciones innovadoras que aporten al crecimiento tecnológico de mi entorno. Además de la programación y la creación de sitios web. Cada desafío que enfrento lo veo como una oportunidad para adiquieir conocimiento.
+    </p>
+  </section>
+  <br>
+  <section id="intereses">
+    <h2>Mis intereses y logros</h2>
+    <ul>
+      <li>Logré ingresar a la universidad que quería y en la carrea que quería</li>
+      <li>me interesa aprender a progamar como un profesional y crear herraminetas que facilite ayudar a otras personas</li>
+      <li>Tengo curiosidades sobre la seguridad en la informática y su prtección</li>
+      <li>Puedo continuar estudiando gracias al apoyo de mis padres</li>
+      <li>Constantemente me esfuerzo por tratar de mejorar en los errores que me llevaron al fracaso en algunas ocasiones</li>
+    </ul>
+  </section>
+  <br>
+  <section id="habilidades">
+    <h2>Mis habilidades</h2>
+    <table border ="1">
+      <thead>
+        <tr>
+         <th><mark>Habilidades</mark></th>
+          <th><mark>Nivel de habilidad</mark></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Deportes</td>
+          <td>Básico</td>
+        </tr>
+        <tr>
+          <td>Cocina</td>
+          <td>Básico</td>
+        </tr>
+        <tr>
+          <td>Programar</td>
+          <td>Básico</td>
+        </tr>
+        <tr>
+          <td>Baile</td>
+          <td>Moderado</td>
+        </tr>
+          <td>Canto</td>
+          <td>Simple</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">tabla de habilidades</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+
+  <section id="multimedia">
+    <h2>Grabación de presentación personal</h2>
+      <audio controls>
+    <source src="/Area de arquitectura- proyectos/audios/audio informativo.mp3.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+  </section>
+  <br>
+  <section id="formulario-avanzado">
+  <h2>Formulario Avanzado</h2>
+  <form>
+
+    <!-- Agrupación con fieldset -->
+    <fieldset>
+      <legend>INFORMACION PERSONAL</legend>
+      <label for="nombre">Nombre completo:</label><br>
+      <input type="text" id="nombre" name="nombre" placeholder="Ej: Estalyn Ortega" required><br>
+
+      <label for="correo">Correo electrónico:</label><br>
+      <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required><br>
+
+      <label for="telefono">Teléfono:</label><br>
+      <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="10 dígitos" required><br>
+      <label for="fecha">Fecha de nacimiento:</label><br>
+      <input type="date" id="fecha" name="fecha" required><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>PREFERENCIAS</legend>
+      <label for="lenguajes">Lenguajes que dominas:</label><br>
+      <select id="lenguajes" name="lenguajes" multiple required>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+        <option value="java">Java</option>
+        <option value="Python">Python</option>
+        <option value="Otros">Otros</option>
+      </select><br><br>
+
+      <input type="checkbox" id="terminos" name="terminos" required>
+      <label for="terminos">Acepto los términos y condiciones</label><br><br>
+    </fieldset>
+
+    <input type="submit" value="Enviar datos">
+  </form>
+</section>
